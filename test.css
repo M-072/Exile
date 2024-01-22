@@ -1,0 +1,115 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    background: #000;
+    color: #ededed;
+}
+
+.header {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    padding: 20px 10%;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 30px;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.navbar a {
+    font-size: 18px;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: .3s;
+}
+
+.navbar a:hover,
+.navbar a.active{
+    color: #c0c96c;
+}
+
+.home {
+    height: 100vh;
+    display: flex;
+    background: url(exile.jpg) no-repeat;
+    background-position-x: 950px;
+    background-position-y: center;
+    align-items: center;
+    padding: 0 10%;
+}
+
+.home-content {
+    max-width: 600px;
+}
+
+.home-content h1 {
+    font-size: 70px;
+    color: #c0c96c;
+}
+
+.home-content p {
+    font-size: 30px;
+    color: #ffffff;
+}
+
+.soi {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    bottom: 40px;
+    width: 170px;
+}
+
+.soi a {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid #c0c96c;
+    border-radius: 50%;
+    font-size: 30px;
+    color: #c0c96c;
+    text-decoration: none;
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.soi a:hover{
+    color: #000;
+}
+
+.soi a::before {
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 0%;
+    height: 100%;
+    background: #c0c96c;
+    z-index: -1;
+    transition: .5s;
+}
+
+.soi a:hover::before {
+    width: 100%;
+}
